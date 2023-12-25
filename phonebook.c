@@ -23,46 +23,39 @@ void main(){
     password();
 }
 
-//Explained the password function in proper detail.
+//Explained the password function in proper detailed.
 void password()
 {
     system("cls");
-
     char pwd[255];
-    char code[255] = {"Alkaison"};
+    char code[255] = {"12345678"};  // Updated password
     int i = 0;
-	char ch;
-
-	printf("Enter your password. Hit ENTER to confirm. \n");
-	printf("Password:");
-
-	while(1)
+    char ch;
+    printf("Enter your password. Hit ENTER to confirm. \n");
+    printf("Password:");
+    while(1)
     {
-
-		ch = getch(); // get key
-
-		if(ch == ENTER || ch == TAB)
+        ch = getch(); // get key
+        if(ch == ENTER || ch == TAB)
         {
-			pwd[i] = '\0';
-			break;
-		}
+            pwd[i] = '\0';
+            break;
+        }
         else if(ch == BKSP)
         {
-		    if(i > 0)
+            if(i > 0)
             {
-				i--;
-				printf("\b \b"); // for backspace
-			}
-		}
+                i--;
+                printf("\b \b"); // for backspace
+            }
+        }
         else
         {
-			pwd[i++] = ch;
-			printf("* \b");	// to replace password character with *
-		}
-	}
-
-	// printf("\n\nPassword:%s\nLength:%d\n\n", pwd, i);  -- prints the user input & lenght of string
-
+            pwd[i++] = ch;
+            printf("* \b");    // to replace password character with *
+        }
+    }
+    // printf("\n\nPassword:%s\nLength:%d\n\n", pwd, i);  -- prints the user input & length of string
     // verifies the password
     if(strcmp(code, pwd) == 0)
     {
@@ -72,11 +65,12 @@ void password()
     }
     else
     {
-        printf("\nInvaild Password!");
+        printf("\nInvalid Password!");
         Sleep(2000);
         password();
     }
 }
+
 
 void menu()
 {
@@ -453,7 +447,10 @@ void end()
     system("cls");
 
     printf(">>> Phone Book in C <<< \n\n");
-    printf("> Creator: Nishi Vishwakarma \n\n");
+    printf("> Creator: @Alkaison (Ganesh Mourya) \n\n");
+    printf("> Github: https://github.com/Alkaison \n");
+    printf("> Twitter: https://twitter.com/Alkaison \n");
+    printf("> LinkedIn: https://www.linkedin.com/in/Alkaison \n\n");
     printf("Press any key to exit. \n");
 
     getch();
