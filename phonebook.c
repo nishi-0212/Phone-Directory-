@@ -447,10 +447,7 @@ void end()
     system("cls");
 
     printf(">>> Phone Book in C <<< \n\n");
-    printf("> Creator: @Alkaison (Ganesh Mourya) \n\n");
-    printf("> Github: https://github.com/Alkaison \n");
-    printf("> Twitter: https://twitter.com/Alkaison \n");
-    printf("> LinkedIn: https://www.linkedin.com/in/Alkaison \n\n");
+    printf("> Creator: Nishi Vishwakarma \n\n");
     printf("Press any key to exit. \n");
 
     getch();
